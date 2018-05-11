@@ -117,7 +117,7 @@ public abstract class BaseController {
 	 * @param message
 	 */
 	protected void addMessage(Model model, String... messages) {
-		StringBuilder sb = new StringBuilder();
+		StringBuffer sb = new StringBuffer();
 		for (String message : messages){
 			sb.append(message).append(messages.length>1?"<br/>":"");
 		}
@@ -129,7 +129,7 @@ public abstract class BaseController {
 	 * @param message
 	 */
 	protected void addMessage(RedirectAttributes redirectAttributes, String... messages) {
-		StringBuilder sb = new StringBuilder();
+		StringBuffer sb = new StringBuffer();
 		for (String message : messages){
 			sb.append(message).append(messages.length>1?"<br/>":"");
 		}
